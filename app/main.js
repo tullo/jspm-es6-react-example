@@ -16,6 +16,6 @@ class OpenSauce extends React.Component {
 }
 
 ReactDOM.render(
-  <OpenSauce name="jackfranklin" />,
+  <OpenSauce name="tullo" />,
   document.getElementById('app')
 );

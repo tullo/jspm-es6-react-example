@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tullo/jspm-es6-react-example#readme",
   "devDependencies": {
+    "html-dist": "^0.2.2",
     "jspm": "^0.16.39"
   },
   "jspm": {

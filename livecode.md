@@ -12,10 +12,9 @@ jspm install react
 jspm install react-dom
 
 mkdir app
-echo "console.log("hello world");" >> app/main.ts
-
-tsc --init
-tsc -w --rootDir app
+echo "console.log("hello world");" >> app/main.js
 serve
 
+npm i html-dist --save-dev
+touch html-dist.config.js
 ```
