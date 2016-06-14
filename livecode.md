@@ -10,4 +10,13 @@ jspm init
 jspm install fetch=npm:whatwg-fetch
 jspm install react
 jspm install react-dom
+
+mkdir app
+echo "console.log("hello world");" >> app/main.ts
+
+tsc --init
+tsc -w --rootDir app
+serve
+
+
 ```
