@@ -17,4 +17,5 @@ serve
 
 npm i html-dist --save-dev
 touch html-dist.config.js
+touch build.sh
 ```
