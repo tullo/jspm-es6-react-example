@@ -1,5 +1,13 @@
 # Live Code Log
 
-    npm init
-    npm install jspm --save-dev
+```javascript
+npm init
+npm install jspm --save-dev
 
+jspm init
+  transpiler: typescript
+// jspm install npm:whatwg-fetch
+jspm install fetch=npm:whatwg-fetch
+jspm install react
+jspm install react-dom
+```
