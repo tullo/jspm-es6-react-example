@@ -18,5 +18,10 @@
   "homepage": "https://github.com/tullo/jspm-es6-react-example#readme",
   "devDependencies": {
     "jspm": "^0.16.39"
+  },
+  "jspm": {
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
   }
 }
