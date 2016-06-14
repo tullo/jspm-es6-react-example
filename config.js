@@ -1,13 +1,22 @@
 System.config({
   baseURL: "/",
   defaultJSExtensions: true,
-  transpiler: "typescript",
+  transpiler: "babel",
+  babelOptions: {
+    "optional": [
+      "runtime",
+      "optimisation.modules.system"
+    ]
+  },
   paths: {
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
 
   map: {
+    "babel": "npm:babel-core@5.8.38",
+    "babel-runtime": "npm:babel-runtime@5.8.38",
+    "core-js": "npm:core-js@1.2.6",
     "fetch": "npm:whatwg-fetch@1.0.0",
     "react": "npm:react@15.1.0",
     "react-dom": "npm:react-dom@15.1.0",
@@ -71,6 +80,9 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "util": "npm:util@0.10.3"
+    },
+    "npm:babel-runtime@5.8.38": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:browserify-zlib@0.1.4": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

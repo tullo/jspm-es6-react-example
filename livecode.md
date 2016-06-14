@@ -5,7 +5,7 @@ npm init
 npm install jspm --save-dev
 
 jspm init
-  transpiler: typescript
+  transpiler: babel
 // jspm install npm:whatwg-fetch
 jspm install fetch=npm:whatwg-fetch
 jspm install react
@@ -17,6 +17,5 @@ echo "console.log("hello world");" >> app/main.ts
 tsc --init
 tsc -w --rootDir app
 serve
-
 
 ```
