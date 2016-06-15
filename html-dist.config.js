@@ -17,7 +17,7 @@ export default {
     // append the following things to the body
     appends: [
       script({
-        src: 'app.js'
+        src: 'app.js',  async: true
       }),
       googleAnalytics('UA-1234')
     ]
